@@ -1,0 +1,28 @@
+{
+  "name": "rich-proxy-front-end-capstone",
+  "version": "1.0.0",
+  "description": "> Project description",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./proxy/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/das-haustelles/rich-proxy-front-end-capstone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/das-haustelles/rich-proxy-front-end-capstone/issues"
+  },
+  "homepage": "https://github.com/das-haustelles/rich-proxy-front-end-capstone#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}

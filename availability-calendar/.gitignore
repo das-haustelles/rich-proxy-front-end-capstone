@@ -61,6 +61,5 @@ typings/
 .next
 
 config.js
-bundle.js
 
 test/__snapshots__

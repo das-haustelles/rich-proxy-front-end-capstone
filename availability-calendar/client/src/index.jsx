@@ -165,4 +165,7 @@ class App extends React.Component {
   }
 }
 
+export default App;
+window.Calendar = App;
+
 ReactDOM.render(<App />, document.getElementById('app'));

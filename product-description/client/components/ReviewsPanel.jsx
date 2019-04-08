@@ -105,3 +105,5 @@ class ReviewsPanel extends React.Component {
 }
 
 export default ReviewsPanel;
+
+window.ReviewsPanel = ReviewsPanel;

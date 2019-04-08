@@ -6,6 +6,3 @@ import ReviewsPanel from './components/ReviewsPanel';
 
 
 ReactDOM.render(<ReviewsPanel />, document.getElementById('reviews'));
-
-
-window.Reviews = Reviews;
