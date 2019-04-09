@@ -7,16 +7,18 @@
   <title>Das Haustelles HostelWorld</title>
   <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 </head>
 <body>
   <div id="navbar"></div>
   <div id="search-bar"></div>
-  <div id="reviews"></div>
   <div id="calendar"></div>
+  <div id="reviews"></div>
+  <script src="http://localhost:3004/bundle.js"></script>
   <script src="http://localhost:3000/bundle.js"></script>
   <script src="http://localhost:1128/client/dist/bundle.js"></script>
-  <script src="http://localhost:3004/bundle.js"></script>
-  <script src="http://localhost:3001/hostels/1/bundle.js"></script>
+  <script src="http://localhost:3001/hostels/:id/bundle.js"></script>
   <script>
     ReactDOM.render(
         React.createElement(NavBar),
@@ -25,14 +27,14 @@
     ReactDOM.render(
       React.createElement(SearchBar),
       document.getElementById('search-bar')
+      );
+    ReactDOM.render(
+      React.createElement(Calendar),
+      document.getElementById('calendar')
     );
     ReactDOM.render(
       React.createElement(ReviewsPanel),
       document.getElementById('reviews')
-    );
-    ReactDOM.render(
-      React.createElement(Calendar),
-      document.getElementById('calendar')
     );
   </script>
 </body>
