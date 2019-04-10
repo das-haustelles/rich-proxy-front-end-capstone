@@ -12,7 +12,6 @@ app.get('/api/hostels/:id', (req, res) => {
   const hostelId = req.params.id;
   axios.get(`http://localhost:3001/api/hostels/${hostelId}`)
     .then((response) => {
-      console.log(response.data);
       res.send(response.data);
     });
 });
@@ -21,7 +20,6 @@ app.get('/hostels/:id/bookings', (req, res) => {
   const hostelId = req.params.id;
   axios.get(`http://localhost:3001/hostels/${hostelId}/bookings`)
     .then((response) => {
-      console.log(response.data);
       res.send(response.data);
     });
 });
